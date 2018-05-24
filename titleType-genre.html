@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IMDB Visualisations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="search.css">
+    
+    
+<style>
+body {margin:0;
+    color: aliceblue;
+    background-image:url("png/movie.jpg");
+    background-size:1400px 800px;
+    border-radius: 12px;
+    
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    }
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+.button {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+</style>
+    
+    <!-- https://www.pinterest.com/pin/414683078161007928/
+    -->
+ 
+<body>  
+    
+    <div class="icon-bar">
+<a><img src = "imdb.jpg" style="height:100px"></a> 
+  <a href="IMDBweb.html">Welcome</a> 
+  <a href="Data.html">Data</a> 
+  <a href="visualize.html">Visualize</a>
+  <a href="comment.html">Comment</a> 
+</div>
+    
+    <div style="padding:15px 15px 2500px;font-size:30px">
+  <p><b>Title Types and their Genres</b></p>
+  <p>Search through the different Title Types to see their Number of Genre Records throughout the years</p>
+        
+  <div style="color: black;">      
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search a movie series..."></div>
+
+<ul id="myUL">
+  <li><a href="movie.html">Movie </a></li>
+  <li><a href="short.html">Short   </a></li>
+
+  <li><a href="tvseries.html">Tv Series  </a></li>
+  <li><a href="tvepisode.html">Tv Episode  </a></li>
+
+  <li><a href="video.html">Video  </a></li>
+  <li><a href="tvMiniSeries.html">Tv Mini Series  </a></li>
+  <li><a href="tvMovie.html">Tv Movie  </a></li>
+  <li><a href="tvShort.html">Tv Short  </a></li>
+  <li><a href="tvSpecial.html">Tv Special  </a></li>
+  <li><a href="videoGame.html">Video Game  </a></li>
+    </ul>
+        
+        
+        <script>
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+        
+<img width="1172" img-align="center">
+
+    
+    </div></body>

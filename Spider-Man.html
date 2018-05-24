@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Embedding Vega-Lite</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@3.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.3.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.2.0"></script>
+</head>
+ 
+    
+<body>
+    
+    <h1>Spider-Man Movies</h1> 
+    <p><a href="visualize.html">Back To Visualisations</a></p>
+
+  <div id="vis"></div>
+
+  <script type="text/javascript">
+    var yourVlSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+        "width": 200, "height": 200,
+  "data": {
+    "url": "tmdb_5000_movies1.csv"
+  },
+        "transform": [{"filter": {"field": "title", "oneOf":["Spider-Man", "Spider-Man 2", "Spider-Man 3"]}}],
+        
+    "mark": "point",
+    "encoding": {
+        
+     "x": {
+        
+        "field": "original_title", 
+        "type": "nominal"
+     },
+        
+     "y": {"field": "vote_average" , "type": "quantitative"},
+        
+        "color": {"field": "tagline", "type": "nominal"},
+    "shape": {"field": "vote_count", "type": "nominal"}
+        
+        
+  }
+    }
+    vegaEmbed("#vis", yourVlSpec);
+  </script>
+</body>
+</html>

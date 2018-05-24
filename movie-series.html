@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IMDB Visualisations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="search.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    
+<style>
+body {margin:0;
+    color: aliceblue;
+    background-image:url("png/movie.jpg");
+    background-size:1400px 800px;
+    border-radius: 12px;
+    
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;}
+    
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+
+</style>
+    
+    <!-- https://www.pinterest.com/pin/414683078161007928/
+    -->
+ 
+<body>  
+    
+    <div class="icon-bar">
+<a><img src = "imdb.jpg" style="height:100px"></a> 
+  <a href="IMDBweb.html">Welcome</a> 
+  <a href="Data.html">Data</a> 
+  <a href="visualize.html">Visualize</a>
+  <a href="comment.html">Comment</a> 
+</div>
+    
+    <div style="padding:15px 15px 2500px;font-size:30px">
+  <p><b>Movie Series'</b></p>
+  <p>Look at Visualisations of each Movie Series from the options below</p>
+        
+  <div style="color: black;">      
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search a movie series..."></div>
+
+<ul id="myUL">
+  <li><a href="Spider-Man-Movies.html">Spider Man  <img src = "png/Spider-Man.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+    
+      <li><a href="Harry-Potter-Movies.html">Harry Potter   <img src = "png/Harry-Potter-pic.jpeg" style="height: 50px; border:1px solid #021a40;"></a></li>
+
+  <li><a href="Avengers-Movie.html">Avengers  <img src = "png/Avengers.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Narnia.html">Narnia  <img src = "png/Narnia.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+
+  <li><a href="Star-trek.html">Star Trek  <img src = "png/star-trek.jpg" style="height: 50px; border:1px solid #021a40;">
+</a></li>
+  <li><a href="Captain-America.html">Captain America    <img src = "png/Captain-America.jpg" style="height: 50px; border:1px solid #021a40;">
+</a></li>
+  <li><a href="Pirates-of-the-Caribbean.html">Pirates of the Caribbean  <img src = "png/Pirates.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+    <li><a href="Superman.html">Superman Movies  <img src = "png/Superman.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="MIB.html">Men in Black Movies  <img src = "png/MIB.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Hobbit.html">Hobbit Movies  <img src = "png/Hobbit.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Iron-man.html">Iron-Man Movies  <img src = "png/Iron-man.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+    
+     <li><a href="X-Men.html">X-Men Movies  <img src = "png/x-men.jpeg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Transformers.html">Transformers Movies    <img src = "png/Transformers.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Shrek.html">Shrek Movies  <img src = "png/Shrek.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Hunger-Games.html">Hunger Game Movies    <img src = "png/Hunger-Games.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+       
+    <li><a href="Madagascar.html">Madagascar Movies  <img src = "png/madagascar.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+   <li><a href="Batman.html">Batman Movies  <img src = "png/batman.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+   <li><a href="Night-at-the-museum.html">Night at the Museum Movies  <img src = "png/night-at-the-museum.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Lord-of-the-rings.html">Lord of the rings Movies  <img src = "png/lord-of-the-rings.jpg" style="height: 50px; border:1px solid #021a40;">
+      </a></li>
+        
+  <li><a href="Fast-and-furious.html">Fast and Furious Movies  <img src = "png/fast-furious.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Twilight.html">Twilight Movies  <img src = "png/twilight.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Underworld.html">Underworld Movies  <img src = "png/underworld.png" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Toy-story.html">Toy Story Movies  <img src = "png/Toy-story.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+        
+  <li><a href="Mission-impossible.html">Mission: Impossible Movies  <img src = "png/Mission-impossible.jpeg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Lara-croft.html">Tomb Raider Movies  <img src = "png/Lara-croft.jpeg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="The-mummy.html">The Mummy Movies  <img src = "png/The_mummy.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Bourne.html">Bourne Movies  <img src = "png/Bourne.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+        
+  <li><a href="Resident-evil.html">Resident Evil Movies  <img src = "png/Resident-evil.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Ice-age.html">Ice Age Movies  <img src = "png/Ice-age.png" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Matrix.html">The Matrix Movies  <img src = "png/Matrix.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Indiana-jones.html">Indiana Jones Movies  <img src = "png/Indiana-jones.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+        
+  <li><a href="Ocean's.html">Ocean's Movies  <img src = "png/Ocean's.jpg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Meet-the.html">Meet the Movies  <img src = "png/Meet-the.jpeg" style="height: 50px; border:1px solid #021a40;"></a></li>
+  <li><a href="Alvin.html">Alvin and the Chipmunks the Movies  <img src = "png/Alvin-and-the-Chipmunks.png" style="height: 50px; border:1px solid #021a40;"></a>
+      </li>   
+            <li>      
+  <a href="Terminator.html">Terminator Movies  <img src = "png/Terminator.jpg" style="height: 50px; border:1px solid #021a40;"></a>
+                </li>  
+<li>      
+  <a href="Jurassic-park.html">Jurassic Park Movies  <img src = "png/Jurassic_Park_logo.jpg" style="height: 50px; border:1px solid #021a40;"></a>
+    </li>   
+</ul>
+        
+        
+        <script>
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+  
+    <img width="1172" img-align="center">
+
+    
+    </div></body>

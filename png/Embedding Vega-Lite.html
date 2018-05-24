@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:8000/new.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Embedding Vega-Lite</title>
+  <script src="./Embedding Vega-Lite_files/vega@3.2.1"></script>
+  <script src="./Embedding Vega-Lite_files/vega-lite@2.3.1"></script>
+  <script src="./Embedding Vega-Lite_files/vega-embed@3.2.0"></script>
+</head>
+ 
+    
+<body style="cursor: default;">
+    
+    <h1>Number of Short genres</h1> 
+    <p><a href="http://localhost:8000/visualize.html">Back To Visualisations</a></p>
+
+  <div id="vis" class="vega-embed"><canvas width="495" height="332" class="marks" style="width: 450px; height: 302px;"></canvas><div class="vega-bindings"></div><div class="vega-actions"><a href="http://localhost:8000/new.html#" target="_blank" download="visualization.png">Export as PNG</a><a href="http://localhost:8000/new.html#">View Source</a><a href="http://localhost:8000/new.html#">Open in Vega Editor</a></div></div>
+
+  <script type="text/javascript">
+    var yourVlSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+        "width": 200, "height": 200,
+  "data": {
+    "url": "tmdb_5000_movies1.csv"
+  },
+        "transform": [{"filter": {"field": "title", "oneOf":["Spider-Man", "Spider-Man 2", "Spider-Man 3"]}}],
+        
+    "mark": "point",
+    "encoding": {
+        
+     "x": {
+        
+        "field": "original_title", 
+        "type": "nominal"
+     },
+        
+     "y": {"field": "vote_average" , "type": "quantitative"},
+        
+        "color": {"field": "tagline", "type": "nominal"},
+    "shape": {"field": "vote_count", "type": "nominal"}
+        
+        
+  }
+    }
+    vegaEmbed("#vis", yourVlSpec);
+  </script>
+
+</body></html>
