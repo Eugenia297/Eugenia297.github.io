@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <title>IMDB Visualisations</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-  <link rel="stylesheet" href="search.css">
     
     
 <style>
@@ -25,7 +25,6 @@ body {margin:0;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-   
     }
 
 .icon-bar {
@@ -51,101 +50,35 @@ body {margin:0;
 .active {
     background-color: #4CAF50 !important;
 }
-
-.button {
-    background-color: #f6f6f6; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
     
-}
-    .button:active {
-  background-color: #f6f6f6;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-    .button:hover {background-color: #eee}
+P { text-align: center }
+h1 { text-align: center }
+h2 { text-align: center }
+h3 { text-align: center }
+   
     
 </style>
     
-    <!-- https://www.pinterest.com/pin/414683078161007928/
+    <!-- background image= https://www.pinterest.com/pin/414683078161007928/
     -->
  
 <body>  
-    
     <div class="icon-bar">
 <a><img src = "imdb.jpg" style="height:100px"></a> 
   <a href="IMDBweb.html">Welcome</a> 
-  <a href="Data.html">Data</a>
+  <a href="Data.html">Data</a> 
   <a href="visualize.html">Visualize</a>
   <a href="comment.html">Comment</a> 
 </div>
     
-    <img width="1172" img-align="center">
-    
     <div style="padding:15px 15px 2500px;font-size:30px">
-  <p><b>IMDB Visualisations</b></p>
-  <p>Look through the different visulisation topics below</p>
+  <h1><b>Welcome</b></h1>
         
+        <img width="1172" img-align="center">
         
-        
-        <h1></h1>
-   <div class="button">     
-       <p><a href="year-record.html">Number of Records over the Years</a></p>
-            </div>
-   <div class="button">  
-       <p><a href="ratings.html">Rating/Votes of Title Types</a></p>
-    </div>
-
-  <div class="button">
-      <p><a href="year-genre.html">Genre Records throughout the Year</a></p>
-        </div>
-        
- <div class="button">    
-  <p><a href="titleType-genre.html">Title Types/ Genres</a></p>
-        </div>
-        <h1>
-  <div class="button">      
-  <p><a href="genre-ratingEaras.html">Eara Genre Ratings</a></p>
-        </div>
-        
-  <div class="button">      
-  <p><a href="movie-series.html">Movie Series</a></p>
-        </div></h1>
-        
-        
- <p></p>       
-
-        
-        
-
-        
-        <script>
-function myFunction() {
-    // Declare variables
-    var input, filter, ul, li, a, i;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
-        
-
+  <h1>Go to the Movie Visulisation Website <a href="IMDBweb.html">Home Page</a></h1>
+  
+</div>
     
-    </div></body>
+
+    </body>
